@@ -1,0 +1,25 @@
+<div class="col-lg-4">e</div>
+<div class="col-lg-4">
+  <form>
+    <div class="mb-3">
+      <label for="userName" class="form-label">userName</label>
+      <input type="text" class="form-control" id="userName" [(ngModel)]="loginobj.userName" name="userName"
+        placeholder="Enter your userName" required />
+    </div>
+    <div class="mb-3">
+      <label for="loginpassword" class="form-label">password</label>
+      <input type="password" class="form-control" id="loginpassword" [(ngModel)]="loginobj.password" name="password"
+        placeholder="Enter your password" required />
+    </div>
+  
+    <button type="submit" class="btn btn-primary w-100" [disabled]="loginobj.input" (click)="onLogin()">
+      Login
+    </button>
+    <p class="text-center mt-3 text-primary">Don't have an account? <a href="#" class="text-danger bg-white rounded p-2">
+        <b>Sign Up
+          here</b></a></p>
+  </form>
+
+</div>
+<div class="col-lg-4"></div>
+

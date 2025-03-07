@@ -1,0 +1,16 @@
+<nav class="navbar mt-2">
+  <div class="navbar-container container">
+
+    <ul class="menu-items text-center">
+      @for (item of LoggedUserMenu; track $index) {
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="item.path">{{item.Title}}</a>
+
+      </li>
+      }
+
+
+    </ul>
+    <h1 class="logo">Navbar</h1>
+  </div>
+</nav>
